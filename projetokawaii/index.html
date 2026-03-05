@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawaii Focus Timer 🌸</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="timer-container">
+        <div class="mascot">
+            <img src="https://placehold.co/150x150/ffcfd2/fff?text=^._.^" alt="Mascote Fofo">
+        </div>
+
+        <h1 class="title">Kawaii Focus</h1>
+
+        <div class="timer-display" id="display">25:00</div>
+
+        <div class="controls">
+            <button id="start" class="btn">Iniciar ✨</button>
+            <button id="pause" class="btn">Pauser 🎀</button>
+            <button id="reset" class="btn">Resetar 🌈</button>
+        </div>
+
+        <p id="message" class="message">Hora de focar, divas! 🍬</p>
+
+        <div class="cycles-container">
+            <p>Ciclos de Foco: <span id="cycle-count">0</span> 🌟</p>
+        </div>
+        <button id="clear-cycles" class="btn" style="background-color: #fce4ec; font-size: 10px;">Zerar progresso girl 🗑️</button>
+    </div>
+    
+    <div class="extras-container">
+        <div class="music-player">
+            <h3>Rádio de Estudos 🌸</h3>
+            <div class="radio-buttons">
+                <a href="https://youtu.be/wZVpusDUXbk?si=F50hHyLFoZk_-dGB" target="_blank" class="radio-link">☁️ Lofi Girl (Foco)</a>
+                <a href="https://youtu.be/Hk-NmEhTSo8?si=LH12ioMxsOfpvbLK" target="_blank" class="radio-link">🎀 Pomodoro girl</a>
+            </div>
+            <p class="hint">Clique para abrir a música em uma nova aba ✨</p>
+        </div>
+
+        <div class="notes-area">
+            <h3>Minhas Metas 🎀</h3>
+            <textarea id="note-input" placeholder="O que vamos conquistar hoje?"></textarea>
+            <button id="save-note" class="btn">Salvar Nota ✨</button>
+            <p id="saved-text"></p>
+        </div>
+    </div>
+<div class="time-presets">
+    <button class="btn-small" onclick="setTime(15)">15 min ☕</button>
+    <button class="btn-small" onclick="setTime(25)">25 min 🌸</button>
+    <button class="btn-small" onclick="setTime(50)">50 min 🔥</button>
+    <input type="number" id="custom-min" placeholder="Min" min="1" max="60">
+    <button id="set-custom" class="btn-small">Set ✨</button>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

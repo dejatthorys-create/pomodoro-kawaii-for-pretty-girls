@@ -1,0 +1,154 @@
+/* Importando uma fonte fofinha do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+    background-color: #fef1f2; /* Rosa bem clarinho */
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa a altura inteira da tela */
+    margin: 0;
+}
+
+.timer-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 30px; /* Bordas bem redondas! */
+    box-shadow: 0 10px 20px rgba(255, 182, 193, 0.3); /* Sombra suave rosa */
+    text-align: center;
+    width: 300px;
+    border: 4px solid #ffcfd2; /* Bordas coloridas */
+}
+
+.mascot img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #fde2e4;
+}
+
+.title {
+    color: #ff85a1; /* Rosa mais forte para o título */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.timer-display {
+    font-size: 64px;
+    font-weight: bold;
+    color: #b1a7f2; /* Lilás para o tempo */
+    margin: 20px 0;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Estilo geral dos botões */
+.btn {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
+    transition: all 0.3s ease; /* Animação suave ao mudar */
+}
+
+#start { background-color: #c1f0cf; color: #4b7a5a; } /* Verde pastel */
+#pause { background-color: #fde2e4; color: #a1616a; } /* Rosa pastel */
+#reset { background-color: #d6e2ff; color: #5a74a1; } /* Azul pastel */
+
+/* Efeito de hover (quando passa o mouse) */
+.btn:hover {
+    transform: translateY(-3px); /* O botão "pula" um pouquinho */
+    filter: brightness(0.9); /* Escurece levemente */
+}
+
+.message {
+    margin-top: 20px;
+    color: #ffb3c1;
+    font-style: italic;
+}
+
+/* efeito dos botões */
+.radio-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.radio-link {
+    display: block;
+    background-color: #ffcfd2;
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.radio-link:hover {
+    background-color: #ffb3c1;
+    transform: scale(1.05);
+}
+
+.hint {
+    font-size: 11px;
+    color: #a1616a;
+    margin-top: 8px;
+}
+/* os layout para o bloquinho e os links */
+@media (min-width: 768px) {
+    body {
+        flex-direction: row; /* Coloca o timer de um lado e os extras do outro */
+        gap: 40px;
+    }
+}
+/* contador de ciclos */
+.cycles-container {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 5px 15px;
+    margin: 10px auto;
+    display: inline-block;
+    border: 2px solid #ffcfd2;
+    color: #ff85a1;
+    font-weight: bold;
+}
+
+/* estilos para os botões de tempo pré-definido */
+.time-presets {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+}
+
+.btn-small {
+    background-color: #fff;
+    border: 1px solid #ffcfd2;
+    border-radius: 8px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.btn-small:hover {
+    background-color: #ffcfd2;
+    color: white;
+}
+
+#custom-min {
+    width: 45px;
+    padding: 4px;
+    border-radius: 8px;
+    border: 1px solid #ffcfd2;
+    text-align: center;
+}
